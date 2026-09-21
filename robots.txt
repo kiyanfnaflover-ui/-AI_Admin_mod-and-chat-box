@@ -1,0 +1,40 @@
+# ============================================
+# AI Minecraft Administrator - Robots Directive
+# ============================================
+# Allows search engines to crawl the site while
+# protecting sensitive/system areas.
+# ============================================
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /style.css
+Allow: /script.js
+Allow: /sitemap.xml
+
+# Block common system and config files
+Disallow: /.env
+Disallow: /config/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.log$
+Disallow: /*.json$
+
+# --- AI Training Bots (Optional) ---
+# Uncomment the block below if you do NOT want
+# your mod page scraped for AI training datasets.
+
+# User-agent: GPTBot
+# Disallow: /
+
+# User-agent: ClaudeBot
+# Disallow: /
+
+# User-agent: Google-Extended
+# Disallow: /
+
+# User-agent: CCBot
+# Disallow: /
+
+# Link to the XML sitemap
+Sitemap: https://your-domain.com/sitemap.xml
